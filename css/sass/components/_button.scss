@@ -1,0 +1,15 @@
+button {
+  color: $primary;
+  padding: 1rem;
+}
+button:hover {
+  background-color: $info;
+  color: black;
+  width: 10%;
+  border: none;
+}
+
+.goup {
+  position: sticky;
+  float: right;
+}

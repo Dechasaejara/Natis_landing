@@ -1,0 +1,42 @@
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem;
+  background-color: $secondary;
+
+  &__logo {
+    background-color: orangered;
+  }
+
+  &__item {
+    display: flex;
+    text-decoration: none;
+
+    li {
+      list-style: none;
+    }
+    a {
+      color: $white;
+      text-transform: uppercase;
+      padding: 2rem;
+    }
+  }
+}
+
+.card {
+  width: 50%;
+  margin: 20px auto;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: $dark;
+  color: $light;
+
+  img {
+    border-radius: 50%;
+  }
+}
