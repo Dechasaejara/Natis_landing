@@ -1,42 +1,36 @@
-.headerNav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header {
+  // display stuff
+  display: grid;
+  grid-template-columns: 2rm 1fr 2rm;
+  align-content: center;
 
+  // positioning stuff
+
+  width: 100%;
+  height: 25%;
+
+  // box-model stuff
   padding: 2rem;
-  background-color: $secondary;
+  // typography stuff
+
+  // manuplation stuff
+  background: orangered;
+  // mislenous stuff
 
   &__logo {
-    background-color: orangered;
+    img {
+      max-width: 4rem;
+    }
   }
-
-  &__item {
+  &__links {
     display: flex;
-    text-decoration: none;
-
     li {
       list-style: none;
+      padding: 0.5rem;
+      a {
+        color: $dark;
+        text-decoration: none;
+      }
     }
-    a {
-      color: $white;
-      text-transform: uppercase;
-      padding: 2rem;
-    }
-  }
-}
-
-.card {
-  width: 50%;
-  margin: 20px auto;
-  height: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3rem;
-  background-color: $dark;
-  color: $light;
-
-  img {
-    border-radius: 50%;
   }
 }
